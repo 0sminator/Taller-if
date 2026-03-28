@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int calificacion;
+
+	cout <<"Ingrese su calificacion: ";
+	cin>>calificacion;
+
+	 if (calificacion >= 97) {
+        cout << "Su calificacion fue A+, Excelente";
+    } else if (calificacion >= 93) {
+        cout << "Su calificacion fue A, Excelente";
+    } else if (calificacion >= 90) {
+        cout << "Su calificacion fue A-, Excelente";
+    } else if (calificacion >= 87) {
+        cout << "Su calificacion fue B+, Muy bien";
+    } else if (calificacion >= 83) {
+        cout << "Su calificacion fue B, Muy bien";
+    } else if (calificacion >= 80) {
+        cout << "Su calificacion fue B-, Muy bien";
+    } else if (calificacion >= 77) {
+        cout << "Su calificacion fue C+, Bien";
+    } else if (calificacion >= 73) {
+        cout << "Su calificacion fue C, Bien";
+    } else if (calificacion >= 70) {
+        cout << "Su calificacion fue C-, Bien";
+    } else if (calificacion >= 67) {
+        cout << "Su calificacion fue D+, Aprobado";
+    } else if (calificacion >= 63) {
+        cout << "Su calificacion fue D, Aprobado";
+    } else if (calificacion >= 60) {
+        cout << "Su calificacion fue D-, Aprobado";
+    } else {
+        cout << "Su calificacion fue (F), REPROBRADO ";
+    }
+
+	return 0;
+}
