@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int fecha;
+    
+    cout<<"ingrese el año que quiere saber si es biciesto: ";
+    cin>>fecha;
+    
+    if (fecha % 4 == 0 ) {
+        if (fecha % 100 == 0) {
+            if (fecha % 400 == 0) {
+                cout<<"El año es biciesto";
+            } else {
+                cout<<"El año no es biciesto";
+            }
+        } else {
+            cout<<"El año es biciesto";
+        }
+        
+    } else {
+        cout<<"El año no es biciesto";
+    }
+
+    return 0;
+}
