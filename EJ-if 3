@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int opcion;
+
+    cout << "---- MENU ---- "<<endl;
+    cout << "1. Decir un saludo "<<endl;
+    cout << "2. Sumar dos numeros "<<endl;
+    cout << "3. Mostrar mensaje "<<endl;
+    cout << "4. Salir "<<endl;
+    cout << "Elige una opcion: ";
+    cin >> opcion;
+    cout << "   Opcion (1-4): " << opcion;
+    switch (opcion) {
+        case 1:
+            cout << "Hola broki ";
+            break;
+
+        case 2: {
+            int a, b;
+            cout << " Ingrese dos numeros: ";
+            cin >> a >> b;
+            cout << "Resultado: " << a + b << " ";
+            break;
+        }
+
+        case 3:
+            cout << "Hoy tendras un gran dia";
+            break;
+
+        case 4:
+            cout << "Saliendo del programa... ";
+            break;
+
+        default:
+            cout << "Opcion invalida ";
+    }
+	return 0;
+}
